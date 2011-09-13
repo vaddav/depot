@@ -43,6 +43,9 @@ class LineItemsController < ApplicationController
     @cart = current_cart
     product = Product.find(params[:product_id])
     @line_item = @cart.line_items.build(:product => product)
+    if session[:counter] != 0
+      session[:counter] = 0
+    end
 
     respond_to do |format|
       if @line_item.save
