@@ -36,3 +36,6 @@
     color: #adff2f;
     font-size: medium;
 }
+#store .entry form, #store .entry form div {
+    display: inline;
+}
