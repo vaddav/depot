@@ -83,7 +83,8 @@ class LineItemsController < ApplicationController
     @line_item.destroy
 
     respond_to do |format|
-      format.html { redirect_to(line_items_url) }
+      #format.html { redirect_to(line_items_url) }
+      format.html { redirect_to(store_url, :notice => 'Line_item Removed' )}
       format.xml  { head :ok }
     end
   end
