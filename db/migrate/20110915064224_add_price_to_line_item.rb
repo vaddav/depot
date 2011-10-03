@@ -1,9 +1,7 @@
 class AddPriceToLineItem < ActiveRecord::Migration
   def self.up
     add_column :line_items, :price, :decimal
-     LineItem.all.each do |l|
-       l.price = l.product.price
-     end
+     LineItem.all.each { |line| line.price = line.product.price }
   end
 
   def self.down

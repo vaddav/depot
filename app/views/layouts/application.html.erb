@@ -20,13 +20,12 @@
             <% end %>
           <% end %>
 
-
-          <a href="http://www...." >Home</a><br />
-          <a href="http://www..../faq" >Questions</a><br />
-          <a href="http://www..../news" >News</a><br />
-          <a href="http://www..../contact" >Contact</a><br />
+          <%= link_to 'Store', store_url %><br />
+          <%= link_to 'Line_items', line_items_path %><br />
+          <%= link_to 'Products', products_path %><br />
+          <%= link_to 'Carts', carts_path %><br />
           <br />
-          <span><%= Time.now %></span>
+          <span><%= Time.now().strftime("%d/%m/%y %H:%M") %></span>
         </div>
     <div id="main" >
     <%= yield %>

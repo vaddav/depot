@@ -45,9 +45,7 @@ class LineItemsController < ApplicationController
     #@line_item = @cart.line_items.build(:product => product)
     @line_item = @cart.add_product(product.id)
 
-    if session[:counter] != 0
-      session[:counter] = 0
-    end
+    session[:counter] = 0 if session[:counter] != 0
 
     respond_to do |format|
       if @line_item.save
