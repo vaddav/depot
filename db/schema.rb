@@ -22,8 +22,8 @@ ActiveRecord::Schema.define(:version => 20110915064224) do
     t.integer  "cart_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "quantity",   :default => 1
-    t.decimal  "price"
+    t.integer  "quantity",                                  :default => 1
+    t.decimal  "price",      :precision => 10, :scale => 0
   end
 
   create_table "products", :force => true do |t|
