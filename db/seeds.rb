@@ -14,6 +14,6 @@ Ruby is the fastest growing and most exciting dynamic language
 out there. If you need to get working programs delivered fast,
 you should add Ruby to your toolbox.
 </p>},
-:image_url => '/images/ruby.jpg',
+:image_uid => '/images/rails.png',
 :price => 49.50)
 # . . .

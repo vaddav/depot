@@ -7,6 +7,8 @@ gem 'rails', '3.0.9'
 
 gem 'mysql2', '0.2.8'
 gem 'formtastic'
+gem 'rack-cache', :require => 'rack/cache'
+gem 'dragonfly', '~>0.9.8'
 
 # Use unicorn as the web server
 # gem 'unicorn'
